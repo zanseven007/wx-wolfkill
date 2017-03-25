@@ -1,21 +1,81 @@
-/**index.wxss**/
-.userinfo {
+/**首页样式**/
+
+page {
+  height: 100%;
+  background: #eff3f8;
+}
+
+/** 顶部样式 **/
+
+.index-top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #2f3e75;
+  height: 36%;
+  justify-content: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.index-top image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 20rpx;
+  margin-top: -20rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.index-top text {
+  color: #fff;
+  font-size: 32rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+/**开始面杀样式**/
+
+.index-btn {
+  width: 590rpx;
+  height: 120rpx;
+  background: #6882ff;
+  color: #fff;
+  line-height: 120rpx;
+  text-align: center;
+  margin-top: -60rpx;
+  border-radius: 60rpx;
+  font-size: 36rpx;
+}
+
+.index-button-hover {
+  background: #5874fa;
+}
+
+/**底部样式**/
+
+.index-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  height: 550rpx;
+  justify-content: center;
+  align-content: space-between;
+  margin-top:70rpx;
+}
+
+.index-bottom-item {
+  width: 330rpx;
+  height: 250rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20rpx;
+}
+
+.index-bottom-item image {
+  width: 129rpx;
+  height: 122rpx;
+  margin-bottom: 20rpx;
+}
+
+.index-bottom-item text {
+  font-size: 30rpx;
+  color: #666;
 }

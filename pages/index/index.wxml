@@ -1,10 +1,27 @@
+
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="index-top">
+  <image src="./images/logo.png"></image>
+  <text>狼人杀盒子</text>
+</view>
+<view class="index-btn-wrap">
+  <button class="index-btn" type="default" hover-class="index-button-hover">开始面杀</button>
+</view>
+<view class="index-bottom">
+  <view class="index-bottom-item">
+    <image src="./images/gameinfo.png"></image>
+    <text>游戏介绍</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="index-bottom-item">
+    <image src="./images/maninfo.png"></image>
+    <text>人物介绍</text>
+  </view>
+  <view class="index-bottom-item">
+    <image src="./images/goodman.png"></image>
+    <text>好人玩法</text>
+  </view>
+  <view class="index-bottom-item">
+    <image src="./images/wolfman.png"></image>
+    <text>狼人玩法</text>
   </view>
 </view>
