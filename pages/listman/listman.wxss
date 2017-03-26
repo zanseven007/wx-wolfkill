@@ -1,0 +1,47 @@
+/**人物介绍列表页**/
+
+page {
+  background: #eff3f8;
+  padding:10rpx 0;
+}
+
+/**每个人物 box**/
+
+.itemman-container {
+  width: 630rpx;
+  height: 106rpx;
+  background: #fff;
+  box-shadow: 0 4rpx 6rpx 0 #e2e2e2;
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+  padding: 30rpx 40rpx;
+}
+
+.itemman-pic {
+  width: 106rpx;
+  height: 106rpx;
+  float: left;
+}
+
+.itemman-pic image {
+  width: 106rpx;
+  height: 106rpx;
+}
+
+.itemman-text {
+  float: left;
+  margin-left: 30rpx;
+}
+
+.itemman-text .name {
+  color: #333;
+  font-size: 34rpx;
+  display: block;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+}
+
+.itemman-text .intro {
+  color: #b3b3b3;
+  font-size: 28rpx;
+}

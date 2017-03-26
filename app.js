@@ -24,6 +24,20 @@ App({
       })
     }
   },
+  onShow: function(){
+    // wx.navigateTo({
+    //   url: './pages/listman/listman',
+    //   success: function(res){
+        
+    //   },
+    //   fail: function() {
+        
+    //   },
+    //   complete: function() {
+        
+    //   }
+    // })
+  },
   globalData:{
     userInfo:null
   }

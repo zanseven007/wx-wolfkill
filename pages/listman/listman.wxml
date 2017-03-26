@@ -1,0 +1,15 @@
+<template name="itemman">
+  <navigator class="itemman-container" url="../detailman/detailman?name={{name}}" open-type="navigate">
+    <view class="itemman-pic">
+      <image src="{{pic}}"></image>
+    </view> 
+    <view class="itemman-text">
+      <text class="name">{{name}}</text>
+      <text class="intro">{{intro}}</text>
+    </view> 
+  </navigator>
+</template>
+
+<block wx:for="{{dataList}}" wx:key="item">
+    <template is="itemman" data="{{...item}}"></template>
+</block>

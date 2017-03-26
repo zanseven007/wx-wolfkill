@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/listman/listman",
+    "pages/detailman/detailman"
   ],
   "window":{
     "backgroundTextStyle":"light",

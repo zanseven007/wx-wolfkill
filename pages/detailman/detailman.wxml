@@ -1,0 +1,13 @@
+<view class="detailman-container">
+  <!--<view class="detailman-top">
+    <image src="{{pic}}"></image>
+    <text class="name">{{name}}</text>
+  </view> 
+  <view class="detailman-text">
+    <text class="intro">{{intro}}</text>
+    <text class="intro-text">{{intro-text}}</text>
+    <text class="skill">{{skill}}</text>
+    <text class="skill-text">{{skill-text}}</text>
+  </view> -->
+   <text class="name">{{name}}</text>
+</view>

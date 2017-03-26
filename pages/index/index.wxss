@@ -40,6 +40,8 @@ page {
   margin-top: -60rpx;
   border-radius: 60rpx;
   font-size: 36rpx;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .index-button-hover {
