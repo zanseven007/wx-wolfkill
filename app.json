@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/listman/listman",
-    "pages/detailman/detailman"
+    "pages/detailman/detailman",
+    "pages/createroom/createroom",
+    "pages/room/room"
   ],
   "window":{
     "backgroundTextStyle":"light",

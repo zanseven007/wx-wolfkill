@@ -1,7 +1,7 @@
 /**人物介绍列表页**/
 
 page {
-  background: #eff3f8;
+  background: #F5F5F5;
   padding:10rpx 0;
 }
 

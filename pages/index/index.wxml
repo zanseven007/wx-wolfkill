@@ -5,7 +5,7 @@
   <text>狼人杀盒子</text>
 </view>
 <view class="index-btn-wrap">
-  <view class="index-btn" type="default" hover-class="index-button-hover" bindtap="comingsoon">开始面杀</view>
+  <navigator class="index-btn" url="../createroom/createroom" open-type="navigate" hover-class="index-button-hover">开始面杀</navigator>
 </view>
 <view class="index-bottom">
   <view class="index-bottom-item" bindtap="comingsoon">

@@ -1,0 +1,61 @@
+
+<!--pages/room/room.wxml-->
+<view class="room-top">
+  <view class="room-top-pic">
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="room-top-info">
+    <view class="room-top-name">{{userInfo.nickName}}</view>
+    <view class="room-top-card">
+      <text>您的身份是 </text>
+      <text class="card">法官</text>
+    </view>
+  </view>
+  <view class="room-top-operate">
+    <view class="room-top-share" bindtap="sharePage">
+      <image src="./images/share.png"></image>
+    </view>
+    <view class="room-top-qrcode" bindtap="showQrcodeModal">
+      <image src="./images/qrcode.png"></image>
+    </view>
+  </view>
+</view>
+<view class="room-mid">
+  <view class="room-mid-title">
+    游戏流程
+  </view>
+  <view class="room-mid-content">
+    <text>天黑请闭眼。</text>
+    <text>狼人请睁眼。狼人请确认刀的对象。狼人请闭</text>
+    <text>女巫请睁眼。女巫，你有一瓶毒药与一瓶解药，今天晚上他(她)死了，你要救他吗？你有一瓶毒药，你要毒死谁吗？女巫请闭眼。</text>
+    <text>预言家请睁眼。预言家，今天晚上你要验谁的身份？如果这个是好</text>
+  </view>
+</view>
+<view class="room-bottom">
+  <block wx:for="{{[0,1,2,3,4,5,6,7,8,9,10,11]}}">
+    <view class="room-bottom-item">
+      <view class="room-bottom-pic">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="room-bottom-name">
+        <text class="name">{{userInfo.nickName}}</text>
+      </view>
+      <view class="room-bottom-card">
+        <text class="card">平民</text>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="room-modal" hidden="{{isHide}}">
+  <view class="room-modal-content">
+    <view class="room-modal-title">
+      扫码进入房间
+    </view>
+    <view class="room-modal-pic">
+      <image src="./images/qrcode-demo.png"></image>
+    </view>
+  </view>
+  <view class="room-modal-close" bindtap="hideQrcodeModal">
+    <image src="./images/close.png"></image>
+  </view>
+</view>

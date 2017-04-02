@@ -1,0 +1,34 @@
+<template name="itemroom">
+  <view class="itemroom-item">
+    <view class="itemroom-pic">
+      <image src="{{pic}}"></image>
+    </view>
+    <view class="itemroom-text">
+      <text class="name">{{name}}</text>
+    </view>
+    <view class="itemroom-operate">
+      <view class="{{reduceclass}}" bindtap="reducenum" data-id="{{id}}">-</view>
+      <view class="itemroom-num">{{currentNum}}</view>
+      <view class="{{addclass}}" bindtap="addnum" data-max="{{max}}" data-id="{{id}}">+</view>
+    </view>
+  </view>
+</template>
+<view class="itemroom-container">
+  <block wx:for="{{dataList}}" wx:key="item">
+    <template is="itemroom" data="{{...item}}"></template>
+  </block>
+</view>
+<view class="itemroom-bottom">
+  <view class="itemroom-setting">
+  <block wx:for="{{dataList}}" wx:key="item">
+    <text wx:if="{{item.currentNum != 0}}">{{item.name}}{{item.currentNum}}人<text class="douhao">，</text></text>
+  </block>
+  </view>
+  <view class="itemroom-total">
+    <text>当前人数为{{total}}人</text>
+    <text wx:if="{{total == 12}}">(标准局)</text>
+  </view>
+  <view class="itemroom-btn" bindtap="goToPlay">
+    创建房间
+  </view>
+</view>

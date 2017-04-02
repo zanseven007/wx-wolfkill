@@ -1,0 +1,130 @@
+/**创建房间页**/
+
+page {
+  background: #f5f5f5;
+  padding: 10rpx 0;
+}
+
+/**每个人物 box**/
+
+.itemroom-container {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 300rpx;
+  padding-top: 30rpx;
+}
+
+.itemroom-item {
+  width: 210rpx;
+  height: 284rpx;
+  background: #fff;
+  box-shadow: 0 4rpx 6rpx 0 #e2e2e2;
+  margin: 0rpx auto 30rpx;
+  border-radius: 10rpx;
+  padding: 20rpx 15rpx;
+  box-sizing: border-box;
+}
+
+.itemroom-pic {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 0 auto;
+}
+
+.itemroom-pic image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.itemroom-text .name {
+  color: #333;
+  font-size: 30rpx;
+  display: block;
+  text-align: center;
+  margin-top: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.itemroom-operate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.itemroom-reduce {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: #fff;
+  background: #ff5252;
+  font-size: 36rpx;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.itemroom-add {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: #fff;
+  background: #256df2;
+  font-size: 36rpx;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+.itemroom-no{
+  background: #999999;
+}
+.itemroom-num{
+  color: #333;
+  font-size: 36rpx;
+}
+
+/*创建房间底部*/
+.itemroom-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 275rpx;
+  background: #fff;
+  box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.itemroom-setting{
+  min-height: 58rpx;
+}
+.itemroom-setting text:last-child .douhao{
+  display: none;
+}
+.itemroom-setting text{
+  font-size: 24rpx;
+  color: #333;
+}
+.itemroom-total{
+  font-size: 30rpx;
+  text-align: center;
+  color: #6882FF;
+  margin-top: 20rpx;
+}
+.itemroom-btn{
+  width: 100%;
+  height: 100rpx;
+  background: #6882ff;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40rpx;
+}
